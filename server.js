@@ -10,6 +10,7 @@ app.get('/', (request, response)=>{
 
 })
 
+//use the url to obtain the request
 app.get('/api/:cityName', (request,response)=>{
     const cityName = request.params.cityName.toLowerCase()
     console.log(cityName)
